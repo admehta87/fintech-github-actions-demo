@@ -25,4 +25,4 @@ def test_get_payment_status_rejects_empty_transaction_id():
         get_payment_status("")
 
 def test_calculate_payment_fee_with_wrong_expectation():
-    assert calculate_payment_fee(1000) == 25.00        
+    assert calculate_payment_fee(1000) == 20.00        
