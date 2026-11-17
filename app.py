@@ -22,4 +22,4 @@ if __name__ == "__main__":
     print(f"Transaction ID: {transaction_id}")
     print(f"Payment Amount: {amount}")
     print(f"Payment Fee: {fee}")
-    print(f"Payment Status Updated: {status}")
+    print(f"Payment Status: {status}")
