@@ -30,13 +30,13 @@ jobs:
       - name: Verify GitHub secret availability
         env:
           PAYMENT_API_KEY: ${{ secrets.DEMO_PAYMENT_API_KEY }}
-          run: |
-            if [ -n "$PAYMENT_API_KEY" ]; then
-              echo "Payment API secret is configured."
-            else
-              echo "Payment API secret is missing."
-              exit 1
-            fi
+        run: |
+          if [ -n "$PAYMENT_API_KEY" ]; then
+            echo "Payment API secret is configured."
+          else
+            echo "Payment API secret is missing."
+            exit 1
+          fi
 
       - name: Run automated tests
         run: |
